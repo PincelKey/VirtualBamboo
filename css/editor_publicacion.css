@@ -1,0 +1,266 @@
+body{
+	background: var(--plomo-blanco-vb);
+}
+
+/*Mobile*/
+/*Escritor*/
+#formEscritor{
+	display: flex;
+	flex-direction: column;
+}
+
+/*AreaEscritor*/
+
+#panel-escritor{
+	order: 0;
+	padding: 10px;
+	margin: 5px;
+	background: #fff;
+	border-radius: 15px;
+}
+
+#panel-escritor > div:nth-child(1){
+	display: flex;
+	align-items: center;
+}
+
+#panel-escritor [name*="txt"]{
+	outline: none;
+	padding: 5px 10px;
+	border-radius: 15px;
+	border: none;
+	margin: 5px 0px;
+	transition: all .25s;
+	background: var(--plomo-blanco-vb);
+	color: var(--azul-vb);
+	flex-grow: 1;
+}
+
+#panel-escritor [name*="txt"]:focus{
+	box-shadow: var(--azul-vb) 0px 0px 0px 1px;
+	color: var(--azul-vb);
+}
+
+#panel-escritor > div:nth-child(1) button{
+	background: var(--morado-vb);
+	border: none;
+	border-radius: 15px;
+	outline: none;
+	color: #fff;
+	font-size: 0.9em;
+	margin: 5px;
+	padding: 5px 10px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all .2s;
+	display: flex;
+	align-items: center;
+}
+
+#panel-escritor > div:nth-child(1) button:hover{
+	color: var(--morado-vb);
+	background: #fff;
+	box-shadow: var(--morado-vb) 0px 0px 0px 1px;
+}
+
+.icon-publicar{
+	font-size: 1.2em;
+	line-height: 2px;
+	margin-left: 5px;
+}
+
+/*Text Area - Default*/
+.fr-element p{
+	font-family: "Roboto";
+	margin: 0 0 5px;
+	line-height: 1.5; 
+}
+
+/*Opciones*/
+
+.fr-toolbar{
+	box-shadow: rgba(0,0,0,0.2) 0px 0px 0px 1px !important;
+}
+
+/*Area de texto*/
+.fr-wrapper{
+	box-shadow: rgba(0,0,0,0.2) 0px 0px 0px 1px !important;
+}
+
+.fr-placeholder{
+	font-size: 0.9em !important;
+}
+
+/*AreaEscritor---*/
+
+/*Panel*/
+#panel-detalles{
+	order: 1;
+	margin: 5px;
+	background: #fff;
+	border-radius: 15px;	
+}
+
+.detalle > div{
+	padding: 10px;
+}
+
+.detalle h4{
+	background: var(--negro-vb);
+	color: #fff;
+	padding: 5px 10px;
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+.detalle:nth-child(1) h4{
+	border-radius: 15px 15px 0px 0px;
+}
+
+.select {
+	width: 100%;     
+}
+
+.detalle textarea{
+	width: 100%;
+	resize: none;
+	outline: none;
+	border: none;
+	border-radius: 15px;
+	padding: 10px;
+	margin-top: 10px;
+	color: var(--azul-vb);
+	background: var(--plomo-blanco-vb);
+	font-family: "Montserrat";
+}
+
+.detalle textarea:focus{
+	box-shadow: var(--azul-vb) 0px 0px 0px 1px,
+				var(--azul-mclaro-vb) 0px 0px 0px 4px;
+}
+
+#etiquetas{
+	border-radius: 15px;
+	padding: 10px;
+	background: var(--plomo-blanco-vb);
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#etiquetas:hover{
+	box-shadow: var(--azul-vb) 0px 0px 0px 1px,
+				var(--azul-mclaro-vb) 0px 0px 0px 4px;
+}
+
+.tag{
+	font-size: 0.8em;
+	border-radius: 15px;
+	padding: 3.5px 7px;
+	background: var(--azul-vb);
+	color: #fff;
+	display: flex;
+	margin: 2px 3.5px;
+}
+
+.tag a{
+	display: block;
+	color: #fff;
+	background: transparent;
+	margin-left: 5px;
+	text-decoration: none;
+}
+
+/*Panel-----*/
+
+/*Escritor---------------------*/
+
+/**Footer*/
+footer{
+	background: var(--morado-vb);
+}
+
+/**Footer-------------------------------*/
+
+@media(min-width: 600px){
+	/*Escritor*/
+	#con-formEscritor{
+		display: flex;
+		justify-content: center;
+	}
+
+	#formEscritor{
+		width: 60%;
+	}
+
+	/*Escritor------------------------------*/
+
+}
+
+
+@media(min-width: 1024px){
+	/*Escritor*/
+	#con-formEscritor{
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	#formEscritor{
+		width: 80%;
+		flex-direction: row;
+		padding: 10px;
+	}
+
+	/*Panel*/
+	#panel-detalles{
+		order: 0;
+		width: 20%;
+		border-radius: 10px;
+	}
+
+	.detalle:nth-child(1) h4{
+		border-radius: 10px 10px 0px 0px;
+	}	/*Panel-----*/
+
+	/*AreaEscritor*/
+
+	#panel-escritor{
+		order: 1;
+		width: 80%;
+		border-radius: 10px;
+	}
+
+	#panel-escritor [name*="txt"]{	
+		padding: 7px;
+	}
+
+	#panel-escritor > div:nth-child(1) button{
+		padding: 6px 10px;
+	}
+
+	/*AreaEscritor---*/
+
+	/*Escritor---------------------*/
+
+	/**Footer*/
+	footer{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1000;
+	}
+	/**Footer-------------------------------*/
+		
+}
+
+/*TV*/
+@media(min-width: 1920px){
+	body{
+		background: white;
+	}
+
+	#con-principal{
+		background: var(--plomo-blanco-vb);
+	}	
+}
+

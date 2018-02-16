@@ -1,0 +1,141 @@
+body{
+	background: var(--plomo-blanco-vb);
+}
+
+/*Recuperacion*/
+#formRecuperacion{
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	margin: 10px;
+	background: #fff;
+	border-radius: 15px;
+}
+
+#formRecuperacion > h3{
+	font-weight: 700;
+	color: var(--azul-vb);
+	border-bottom: solid 3px var(--azul-vb);
+	margin-bottom: 10px;
+}
+
+#formRecuperacion [name*="txt"]{
+	outline: none;
+	padding: 5px 10px;
+	border-radius: 15px;
+	border: none;
+	margin: 5px 0px;
+	transition: all .25s;
+	background: var(--plomo-blanco-vb);
+}
+/*Error*/
+#con-recuperacion-error #formRecuperacion [name="txtNewPassUser"]{
+	box-shadow: var(--rojo-vb) 0px 0px 0px 1px;
+}
+/*Error--*/
+
+.spanError{
+	color: var(--rojo-vb);
+	font-size: 0.8em;
+	margin: 5px 0px;
+}
+
+#formRecuperacion [name*="txt"]:focus{
+	box-shadow: var(--azul-vb) 0px 0px 0px 1px;
+}
+
+/*Error*/
+#con-recuperacion-error #formRecuperacion [name*="txt"]:focus{
+	box-shadow: var(--rojo-vb) 0px 0px 0px 1px,
+				var(--rojo-claro-vb) 0px 0px 0px 3px;	
+}
+/*Error--*/
+
+#formRecuperacion > button{
+	background: var(--azul-vb);
+	border: none;
+	border-radius: 15px;
+	outline: none;
+	color: #fff;
+	font-size: 0.9em;
+	margin: 5px;
+	padding: 7px 10px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all .2s;
+}
+
+#formRecuperacion > button:hover{
+	color: var(--azul-vb);
+	background: #fff;
+	box-shadow: var(--azul-vb) 0px 0px 0px 1px;
+}
+
+/*Recuperacion------------------------------*/
+
+/**Footer*/
+footer{
+	background: var(--morado-vb);
+}
+
+/**Footer-------------------------------*/
+
+
+@media(min-width: 600px){
+	/*Recuperacion*/
+	#con-recuperacion, #con-recuperacion-error{
+		display: flex;
+		justify-content: center;
+	}
+
+	#formRecuperacion{
+		width: 60%;
+	}
+
+	/*Recuperacion------------------------------*/
+
+}
+
+
+@media(min-width: 1024px){
+
+	/*Recuperacion*/
+
+	#con-recuperacion, #con-recuperacion-error{
+		position: relative;
+		top: 100px;
+		justify-content: center;
+	}
+
+	#formRecuperacion{
+		width: 25%;
+		margin: 30px;
+		padding: 20px;
+		background: #fff;
+		border-radius: 15px;
+	}
+
+	/*Recuperacion------------------------------*/
+
+	/**Footer*/
+	footer{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1000;
+	}
+	/**Footer-------------------------------*/
+
+}
+
+/*TV*/
+@media(min-width: 1920px){
+	body{
+		background: white;
+	}
+
+	#con-principal{
+		background: var(--plomo-blanco-vb);
+	}	
+}

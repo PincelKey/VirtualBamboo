@@ -1,0 +1,228 @@
+body{
+	background: url("../img/wallpaper.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*Registro*/
+#formRegistro{
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	margin: 10px;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+}
+
+#formRegistro > p{
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+#formRegistro > h3{
+	font-weight: 700;
+	color: var(--azul-vb);
+	border-bottom: solid 3px var(--azul-vb);
+}
+
+#formRegistro [name*="txt"]{
+	outline: none;
+	padding: 5px 10px;
+	border-radius: 15px;
+	border: solid 1px #d8d7d7;
+	margin: 5px 0px;
+	transition: all .25s;
+}
+
+#formRegistro [name*="txt"]:focus{
+	border: solid 1px var(--azul-vb);
+}
+
+
+#formRegistro > button{
+	background: linear-gradient(to right, #430491 46%,#0450fd 100%);
+	border: none;
+	border-radius: 15px;
+	outline: none;
+	color: #fff;
+	font-size: 0.9em;
+	margin: 5px;
+	padding: 7px 10px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all .2s;
+}
+
+#formRegistro > button:hover{
+	color: var(--azul-vb);
+	background: #fff;
+	box-shadow: var(--azul-vb) 0px 0px 0px 1px;
+}
+
+/*Registro------------------------------*/
+
+/*Tendencias*/
+.slick-slide{
+	outline: none;
+}
+
+#tendencias{
+	display: flex;
+}
+
+.tendencia{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+.tendencia > a{
+	outline: none;
+	background: var(--morado-vb);
+	border-radius: 15px;
+	color: #fff;
+	font-size: 0.9em;
+	margin: 5px;
+	padding: 7px 20px;
+	font-weight: 600;	
+	text-decoration: none;
+	transition: all .25s;
+}
+
+.tendencia > a:hover{
+	background: var(--morado-claro-vb);
+}
+
+.tendencia > figure {
+	width: 50px;
+	position: relative;
+	left: -15px;
+	top: 15px;
+}
+
+.tendencia > figure > img{
+	width: 100%;
+	border-radius: 50%;
+	border: solid 3px #d8d7d7;
+}
+
+/*Tendencias---------------------*/
+
+/**Footer*/
+footer{
+	background: rgba(0,0,0,0.4);
+}
+
+/**Footer-------------------------------*/
+
+@media(min-width: 600px){
+	/*Registro*/
+	#con-registro{
+		display: flex;
+		justify-content: center;
+	}
+
+	#formRegistro{
+		width: 60%;
+	}
+
+	/*Registro------------------------------*/
+
+}
+
+@media(min-width: 1024px){
+	/*Registro*/
+	#con-principal{
+		height: 100vh;
+	}
+
+	#con-registro{
+		position: relative;
+		top: 100px;
+		justify-content: flex-end;
+	}
+
+	#formRegistro{
+		width: 25%;
+		margin: 30px;
+		padding: 20px;
+		background: #fff;
+		border-radius: 15px;
+		box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+	}
+
+	/*Registro------------------------------*/
+
+	/*Tendencias*/
+	#con-tendencias{
+		position: absolute;
+		left: 2.5%;
+		right: 0;
+		bottom: 15%;
+		z-index: 1000;
+	}
+
+	#tendencias{
+		width: 40%;		
+	}
+
+	#tendencias:before{
+		z-index: -5;
+		width: 100%;
+		height: 100%;
+		content: "";
+		position: absolute;
+		filter: blur(35px);
+		background: #000;
+	}
+
+	.tendencia > figure {
+		width: 25%;
+		left: -10%;
+	}
+
+
+	/*Tendencias---------------------*/
+
+	/**Footer*/
+	footer{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1000;
+	}
+	
+	footer:before{
+		z-index: -5;
+		width: 100%;
+		height: 100%;
+		content: "";
+
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 10%;
+
+		filter: blur(25px);
+		background: #000;
+	}
+
+	/**Footer-------------------------------*/
+}
+
+/*TV*/
+@media(min-width: 1920px){
+	body{
+		background: white;
+	} 
+
+	#con-principal{
+		background: url("../img/wallpaper.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}	
+}
+
