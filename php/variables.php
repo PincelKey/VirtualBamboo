@@ -1,7 +1,7 @@
 <?php 
 	//define('SERVIDOR','http://localhost/VirtualBamboo');
 	//define('SERVIDOR','http://virtualbamboo.innovdevelopers.com/');
-	define('SERVIDOR','http://http://104.236.115.123/');
+	define('SERVIDOR','http://104.236.115.123/');
 
 
 	//Variables de las rutas (Paginas, etilos etc)
