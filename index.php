@@ -2,7 +2,7 @@
 	include_once 'php/variables.php';
 
 	//Variables
-	$add=1; //Cambio de local a remoto
+	$add=0; //Cambio de local a remoto
 	//*************************************************//
 
 	$componentes_url=parse_url($_SERVER['REQUEST_URI']);
